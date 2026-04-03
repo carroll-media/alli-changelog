@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Outfit } from 'next/font/google'
 import './globals.css'
-import { Header } from '@/components/header'
+import { Sidebar } from '@/components/sidebar'
 
-const inter = Inter({ subsets: ['latin'] })
+const outfit = Outfit({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] })
 
 export const metadata: Metadata = {
   title: 'Alli Changelog',
@@ -17,9 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
+      <body className={outfit.className}>
+        <Sidebar />
+        <div className="pl-56 min-h-screen">
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   )
