@@ -32,6 +32,20 @@ export const categories: Category[] = [
     image: '/images/alli-voice.png',
     entries: [
       {
+        id: 'av-2026-07-13-a',
+        date: '2026-07-13',
+        title: 'Smarter call summary emails',
+        description: 'Call summary emails now run on a significantly smarter AI model with rewritten instructions. The biggest win is the Action Items section: it now reliably lists what your team owes the caller after every call, promised callbacks, quotes to send, and unresolved requests. Previously it often showed nothing even when a follow-up was promised on the call.',
+        type: 'improvement',
+      },
+      {
+        id: 'av-2026-07-13-b',
+        date: '2026-07-13',
+        title: 'Smoother Allstate support handoffs',
+        description: 'When Allstate\'s national support line calls an agency to hand off a customer, Alli now recognizes the caller instantly and welcomes the handoff instead of treating them like an unknown caller. This works around the clock, including after hours.',
+        type: 'improvement',
+      },
+      {
         id: 'av-2026-04-02-a',
         date: '2026-04-02',
         title: 'Call transfers are now guaranteed',
